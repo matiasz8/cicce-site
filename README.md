@@ -50,7 +50,6 @@ pnpm install
 pnpm dev
 ```
 
-
 📦 Available Scripts
 
 pnpm dev: start the development server
@@ -64,11 +63,11 @@ pnpm preview: preview the production build locally
 ### 📂 Project Structure
 
 ├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Main views like the Login page
-│   ├── styles/         # Global styles
-│   └── main.tsx        # Entry point
-├── public/             # Static assets
-├── index.html          # Main HTML file
-├── tailwind.config.js  # Tailwind configuration
-└── vite.config.ts      # Vite configuration
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Main views like the Login page
+│ ├── styles/ # Global styles
+│ └── main.tsx # Entry point
+├── public/ # Static assets
+├── index.html # Main HTML file
+├── tailwind.config.js # Tailwind configuration
+└── vite.config.ts # Vite configuration

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export function useIsSectionVisible(sectionId: string, threshold = 0.6) {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +11,7 @@ export function useIsSectionVisible(sectionId: string, threshold = 0.6) {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold }
+      { threshold },
     );
 
     observer.observe(element);

@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 4, 22, 67;
@@ -28,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #041643 0%, #0a2a6e 100%);
-  background-image: url("../../public/background-login.png");
+  background-image: url('../../public/background-login.png');
 }
 
 .login-card {

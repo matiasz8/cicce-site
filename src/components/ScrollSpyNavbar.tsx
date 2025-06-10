@@ -1,14 +1,14 @@
-import Link from "next/link";
-import { useState } from "react";
-import { useCurrentSectionVisible } from "@/hooks/useCurrentSectionVisible";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Link from 'next/link';
+import { useState } from 'react';
+import { useCurrentSectionVisible } from '@/hooks/useCurrentSectionVisible';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const sections = [
-  { id: "inicio", label: "Inicio" },
-  { id: "quienes-somos", label: "Quiénes somos" },
-  { id: "area", label: "Áreas" },
-  { id: "curso", label: "Curso" },
-  { id: "formulario", label: "Formulario" },
+  { id: 'inicio', label: 'Inicio' },
+  { id: 'quienes-somos', label: 'Quiénes somos' },
+  { id: 'area', label: 'Áreas' },
+  { id: 'curso', label: 'Curso' },
+  { id: 'inscripcion', label: 'Inscripción' },
 ];
 
 export default function ScrollSpyNavbar() {
@@ -28,8 +28,8 @@ export default function ScrollSpyNavbar() {
             href={`#${section.id}`}
             className={`text-sm font-medium transition-all ${
               current === section.id
-                ? "text-blue-600 border-b-2 border-blue-600"
-                : "text-gray-500 hover:text-blue-600"
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-500 hover:text-blue-600'
             }`}
           >
             {section.label}
@@ -59,8 +59,8 @@ export default function ScrollSpyNavbar() {
               onClick={closeMenu}
               className={`text-sm font-medium ${
                 current === section.id
-                  ? "text-blue-600"
-                  : "text-gray-700 hover:text-blue-600"
+                  ? 'text-blue-600'
+                  : 'text-gray-700 hover:text-blue-600'
               }`}
             >
               {section.label}

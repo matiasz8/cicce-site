@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-export function useCurrentSectionVisible(sectionIds: string[], threshold = 0.6) {
+export function useCurrentSectionVisible(
+  sectionIds: string[],
+  threshold = 0.6,
+) {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
 
   useEffect(() => {
@@ -16,7 +19,7 @@ export function useCurrentSectionVisible(sectionIds: string[], threshold = 0.6) 
             setCurrentSection(id);
           }
         },
-        { threshold }
+        { threshold },
       );
 
       observer.observe(el);

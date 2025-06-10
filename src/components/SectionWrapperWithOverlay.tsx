@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type SectionWrapperWithOverlayProps = {
   id?: string;
@@ -9,7 +9,7 @@ type SectionWrapperWithOverlayProps = {
 export default function SectionWrapperWithOverlay({
   id,
   children,
-  className = "",
+  className = '',
 }: SectionWrapperWithOverlayProps) {
   return (
     <section
