@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import SectionWrapper from "@/components/SectionWrapper";
+
 export default function Home() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function Home() {
       <main className="snap-y snap-mandatory h-screen overflow-y-scroll font-sans bg-white text-gray-800">
 
         {/* Hero */}
-        <section className="snap-start h-screen text-center py-20 px-4 flex flex-col justify-center items-center bg-white" id="inicio">
+        <SectionWrapper id="inicio" className="bg-white text-center">
           <h1 className="text-4xl font-bold text-blue-800 mb-2">CICCE</h1>
           <h2 className="text-xl mb-4">
             Centro de Investigación, Capacitación y Consultoría en Enfermería
@@ -28,10 +30,10 @@ export default function Home() {
           >
             Inscribite ahora
           </a>
-        </section>
+        </SectionWrapper>
 
         {/* ¿Quiénes somos? */}
-        <section className="snap-start h-screen  flex flex-col justify-center items-center bg-gray-100" id="quienes-somos">
+        <SectionWrapper id="quienes-somos" className="bg-gray-100 text-center">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">¿Quiénes somos?</h2>
             <p className="mb-4">
@@ -53,10 +55,10 @@ export default function Home() {
               <li><strong>Responsabilidad social</strong> – Mejoras reales en salud.</li>
             </ul>
           </div>
-        </section>
+        </SectionWrapper>
 
         {/* Áreas de trabajo */}
-        <section className="snap-start h-screen py-20 px-4 flex flex-col justify-center items-center bg-white" id="areas">
+        <SectionWrapper id="area" className="bg-white text-center">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Áreas de trabajo</h2>
             <div className="grid md:grid-cols-3 gap-8 text-left">
@@ -85,10 +87,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </SectionWrapper>
 
         {/* Curso destacado */}
-        <section className="snap-start h-screen py-20 px-4 flex flex-col justify-center items-center bg-gray-100" id="curso">
+        <SectionWrapper id="curso" className="bg-gray-100 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
               Curso de Capacitación en Enfermería Laboral
@@ -123,10 +125,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </SectionWrapper>
 
         {/* Formulario */}
-        <section className="snap-start h-screen py-20 px-4 flex flex-col justify-center items-center bg-white" id="formulario">
+        <SectionWrapper id="inicio" className="bg-white text-center">
           <div className="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow">
             <h2 className="text-xl font-bold mb-6 text-center">
               Inscripción al Curso
@@ -167,7 +169,7 @@ export default function Home() {
               </div>
             </form>
           </div>
-        </section>
+        </SectionWrapper>
       </main>
     </>
   );
