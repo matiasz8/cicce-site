@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 4, 22, 67;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #041643 0%, #0a2a6e 100%);
+  background-image: url("../../public/background-login.png");
+}
+
+.login-card {
+  background: white;
+  border-radius: 15px;
+  padding: 4rem 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
