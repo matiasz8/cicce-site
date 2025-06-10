@@ -13,7 +13,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="snap-y snap-mandatory h-screen overflow-y-scroll font-sans bg-white text-gray-800">
+      <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth font-sans bg-white text-gray-800">
 
         {/* Hero */}
         <SectionWrapper id="inicio" className="bg-white text-center">
@@ -128,7 +128,7 @@ export default function Home() {
         </SectionWrapper>
 
         {/* Formulario */}
-        <SectionWrapper id="inicio" className="bg-white text-center">
+        <SectionWrapper id="formulario" className="bg-white text-center">
           <div className="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow">
             <h2 className="text-xl font-bold mb-6 text-center">
               Inscripción al Curso
