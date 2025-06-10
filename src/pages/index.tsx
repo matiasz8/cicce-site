@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import SectionWrapper from "@/components/SectionWrapper";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -16,7 +17,10 @@ export default function Home() {
       <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth font-sans bg-white text-gray-800">
 
         {/* Hero */}
-        <SectionWrapper id="inicio" className="bg-white text-center">
+        <SectionWrapper
+          id="inicio"
+          decorations={["blur-circle", "decor-heartbeat", "stethoscope", "cross-medical", "pill"]}
+          className="bg-white text-center">
           <h1 className="text-4xl font-bold text-blue-800 mb-2">CICCE</h1>
           <h2 className="text-xl mb-4">
             Centro de Investigación, Capacitación y Consultoría en Enfermería
@@ -33,7 +37,10 @@ export default function Home() {
         </SectionWrapper>
 
         {/* ¿Quiénes somos? */}
-        <SectionWrapper id="quienes-somos" className="bg-gray-100 text-center">
+        <SectionWrapper
+          id="quienes-somos"
+          decorations={["blur-circle", "cross-medical"]}
+          className="bg-gray-100 text-center">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">¿Quiénes somos?</h2>
             <p className="mb-4">
@@ -58,7 +65,10 @@ export default function Home() {
         </SectionWrapper>
 
         {/* Áreas de trabajo */}
-        <SectionWrapper id="area" className="bg-white text-center">
+        <SectionWrapper
+          id="area"
+          decorations={["blur-circle", "decor-heartbeat"]}
+          className="bg-white text-center">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Áreas de trabajo</h2>
             <div className="grid md:grid-cols-3 gap-8 text-left">
@@ -90,7 +100,10 @@ export default function Home() {
         </SectionWrapper>
 
         {/* Curso destacado */}
-        <SectionWrapper id="curso" className="bg-gray-100 text-center">
+        <SectionWrapper
+          id="curso"
+          decorations={["blur-circle", "stethoscope"]}
+          className="bg-gray-100 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
               Curso de Capacitación en Enfermería Laboral
@@ -128,7 +141,10 @@ export default function Home() {
         </SectionWrapper>
 
         {/* Formulario */}
-        <SectionWrapper id="formulario" className="bg-white text-center">
+        <SectionWrapper
+          id="formulario"
+          decorations={["blur-circle", "pill"]}
+          className="bg-white text-center">
           <div className="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow">
             <h2 className="text-xl font-bold mb-6 text-center">
               Inscripción al Curso
@@ -171,6 +187,9 @@ export default function Home() {
           </div>
         </SectionWrapper>
       </main>
+
+      <ScrollToTopButton />
+
     </>
   );
 }
