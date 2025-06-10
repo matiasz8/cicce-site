@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 const sections = [
   { id: "inicio", label: "Inicio" },
   { id: "quienes-somos", label: "Quiénes somos" },
-  { id: "areas", label: "Áreas" },
+  { id: "area", label: "Áreas" },
   { id: "curso", label: "Curso" },
   { id: "formulario", label: "Formulario" },
 ];
