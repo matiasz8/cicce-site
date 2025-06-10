@@ -1,28 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
+import { useIsSectionVisible } from "@/hooks/useIsSectionVisible";
 
 export default function ScrollToTopButton() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const inicio = document.getElementById("inicio");
-
-    if (!inicio) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Si estamos viendo la sección "inicio", ocultar el botón
-        setShow(!entry.isIntersecting);
-      },
-      {
-        threshold: 0.6, // visible al menos 60% del bloque
-      }
-    );
-
-    observer.observe(inicio);
-
-    return () => observer.disconnect();
-  }, []);
+  const isInicioVisible = useIsSectionVisible("inicio");
+  const show = !isInicioVisible;
 
   return (
     <a

@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import SectionWrapper from "@/components/SectionWrapper";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import ScrollSpyNavbar from "@/components/ScrollSpyNavbar";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           content="Centro de Investigación, Capacitación y Consultoría en Enfermería"
         />
       </Head>
+      <ScrollSpyNavbar />
 
       <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth font-sans bg-white text-gray-800">
 
