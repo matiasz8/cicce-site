@@ -1,0 +1,9 @@
+echo "🔨 Running build verification before commit..."
+pnpm build
+
+if [ $? -eq 0 ]; then
+  echo "✅ Build successful! Proceeding with commit..."
+else
+  echo "❌ Build failed! Please fix the errors before committing."
+  exit 1
+fi
