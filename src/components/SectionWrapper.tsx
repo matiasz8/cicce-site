@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type SectionWrapperProps = {
   id?: string;
@@ -50,7 +51,7 @@ export default function SectionWrapper({
         const deco = decorationMap[name];
         if (!deco) return null;
         return (
-          <img key={index} src={deco.src} alt="" className={deco.className} />
+          <Image key={index} src={deco.src} alt="" className={deco.className} />
         );
       })}
 
