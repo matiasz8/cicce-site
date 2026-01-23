@@ -130,7 +130,7 @@ export default function Home() {
 
         {/* Curso destacado */}
         <SectionWrapper
-          id="curso"
+          id="cursos"
           decorations={['blur-circle', 'stethoscope']}
           className="bg-gray-100 text-center"
         >

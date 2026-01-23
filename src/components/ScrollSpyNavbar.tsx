@@ -7,7 +7,7 @@ const sections = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'quienes-somos', label: 'Quiénes somos' },
   { id: 'area', label: 'Áreas' },
-  { id: 'curso', label: 'Curso' },
+  { id: 'cursos', label: 'Cursos' },
   { id: 'inscripcion', label: 'Inscripción' },
 ];
 
